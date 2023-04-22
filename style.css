@@ -1,74 +1,176 @@
 *{
     color: black;
+    font-family:;
+    
    }
-  
-  header{
-      border: 1px solid gray;
-      height:50px;
+    /* Variables */
+    :root{
+      --lightgray: #dddddd;
+      --gray: gray;
+      --white: white;
+    
+    }
+
+   /* header styles */
+   
+
+   header{
+    
+      height: 50px;
       display:flex;
       justify-content: space-between;
+      border-bottom: 1px solid lightgray;
+      padding-bottom: 10px;
+      top:0;
+      left:0;
+      position: sticky;
+      background-color: white;
   
   }
   .menu-container {
       display: flex;
+
+      font-size: 20px;
       width: 300px;
       justify-content: space-around;
       align-items: center;
   
     }
     .menu{
-      border:solid black;
-      border-radius: 24px;
-      padding-top:15px;
-      padding-bottom:15px;
-      padding-left:15px;
-      padding-right:15px;
+      border: 1px solid var(--lightgray);
+      padding: 10px 10px 10px 12px;
+      border-radius: 25px;
+
+    }
+    .menu i.fa-user {
+      font-size: 24px;
+      display:flex;
+      justify-content: center;
+      margin-left: 10px;
+      background-color: var(--gray);
      
       
     }
+    .filter-item{
+        width:75px;
+        margin-top: 15px;
+        color: var(gray);
+        transition: color 1s ease;
+    }
+
+    .filter-item:hover{
+      font-weight: bold;
+      color:black;
+      cursor:pointer;
+      border-bottom: 2px solid var(--lightgray);
+    
+    }
+
+    .filter-item p{
+      height:67px;
+    }
     .filters-containers{
-      height:50px;
       display:flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content:space-between;
+      
+      width:100%;
+      justify-content: space-evenly;
+    }
+    .fa-greater-than{
+       font-size: 12px;
+       border: 1px solid var(--lightgray);
+       width:28px;
+       height: fit-content;
+       padding:5px;
+       border-radius: 15px;
+       text-align: center;
+       margin-top:30px;
       
     }
-  
-    .menu-container i {
-      color: black;
-    }
-    .topnav {
-      display: block;
-      margin-top: 20px;
-      border: solid gray;
+    .filter-button{
+      height:30px;
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--lightgray);
       border-radius: 15px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      word-spacing: 10px;
+      padding: 10px;
+      margin-top:20px;
+     
     }
-    
-    .button1{
-      border: none;
-      font-size: 1rem;
-      background-color: white;
+    .filter-button p{
+    font-size: 12px;
+    margin:0;
+    }
+     .accomodation-container{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+
+     }
+    .accomodation {
+      
+      width:300px;
+      padding-right: 30px;
+      box-sizing: border-box;
+      margin-bottom: 20px;;
+    }
+    .accomodation p{
+      margin:0;
+      font-size:15px;
+
+    }
+    .accomodation img{
+      width:100%;
+      border-radius: 25px;
       
     }
-    .button2{
-      border: none;
-      font-size: 1rem;
-      background-color: white;
+    .city-container{
+      margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
     }
-    .button3{
-      border: none;
-      font-size: 1rem;
-      background-color: white;
+    .city-container p{
+       margin:0 0 5px 0;
+       font-weight: bold;
+       word-spacing: 2px;
+       
     }
-  
+    .accomodation-name, .dates{
     
-  footer{
-          
-      border: 1px solid gray;
+     
+      color: var(--gray);
+
+    }
+
+    p.city{
+      margin-top: 10px;
+    }
+    p.dates{
+      margin-top: 10px;
+    }
+    
+    p.price{
+     margin-top: 10px;
+    }
+    .footer-left{
+      display: flex;
+      width:400px;
+      justify-content: space-evenly;
+    }
+    .footer-right{
+      display: flex;
+      width:400px;
+      justify-content: space-evenly;
+    }
+
+    footer{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
       height: 67px;
-  }
+      position: sticky;
+      bottom:0;
+      left:0;
+      background-color: white;
+    }
